@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.quiz.quizservice.model.QuestionWrapper;
 import com.quiz.quizservice.model.Response;
 
-@FeignClient(name = "QUESTION-SERVICE")
+@FeignClient(name = "questionservice")
 public interface QuizInterface {
 
     @GetMapping("/Question/generate")
